@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION['unique_id'])) { //if user is legged in
+        header("location: ../user.php");
+    }
+?>
+
 <?php include_once "header.php"; ?>
 <body>
     <div class="wrapper">
